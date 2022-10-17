@@ -1,0 +1,110 @@
+body {
+    /* background-color: #fff; */
+    font-family: 'Open Sans';
+    font-style: normal;
+    --header-text-color:#fff;
+    --title-text-color: #303030;
+    --p-text-color:#555555;
+    --inform-text-color: #9DA4BD;
+    --focus-color: #FF6C00;
+    --our-barbers-footer-bg-color:#F7F7F7;
+}
+a, ul {
+    list-style: none;
+    text-decoration: none;
+}
+.header {
+  background-image: url("./image/slider/Slider-img-three.jpg"); /*, url("./image/slider/Slider-img-two.jpg"), url("./image/slider/Slider-img-three.jpg"); */
+position: absolute;
+    width: 1170px;
+    height: 680px;
+    left: 215px;
+    top: 0px;
+}
+.click {
+    position: absolute;
+    top: 7.65%;
+    bottom: 90%;
+    color: var(--header-text-color);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+}
+.click:hover,
+.click:focus {
+    color:var(--focus-color);
+}
+.about {
+    left: 17.09%;
+    right: 79.49%;
+}
+.services {
+    left: 23.08%;
+    right: 65.64%;
+}
+.barbers {
+    left: 36.92%;
+    right: 58.55%;
+}
+.contacts {
+    left: 44.02%;
+    right: 50.85%;
+}
+.phone {
+    left: 70.85%;
+    right: 18.8%;
+    text-transform: uppercase;
+}
+.booking {
+
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    left: 84.62%;
+    top: 5.88%;
+    bottom: 88.24%;
+    right: 1.71%;
+    border-radius: 25px;
+    box-sizing: border-box;
+    border: 1px solid #FF6C00;
+    background: transparent;
+}
+/* ♣ */
+.instagram {
+    position: absolute;
+    left: 2.31%;
+    right: 91.54%;
+    top: 79.41%;
+    bottom: 18.38%;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    /* identical to box height */
+
+    letter-spacing: 0.2em;
+
+    color: var(--title-text-color);
+
+    transform: rotate(-90deg);
+}
+.youtube {
+    position: absolute;
+    left: 2.31%;
+    right: 92.74%;
+    top: 62.94%;
+    bottom: 34.85%;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    /* identical to box height */
+
+    letter-spacing: 0.2em;
+
+    color: var(--title-text-color);
+
+    transform: rotate(-90deg);
+}
+.foc:hover,
+.foc:focus {
+    color:var(--focus-color);
+}

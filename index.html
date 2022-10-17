@@ -5,31 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barber-shop</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <img src="./image/Logo.svg" alt="logo" />
+    <header class="header">
+      <img class="logo" src="./image/Logo.svg" alt="logo" />
       <ul>
         <nav>
-          <li><a href="">About</a></li>
-          <li><a href="">Services and prices</a></li>
-          <li><a href="">Barbers</a></li>
-          <li><a href="">Contacts</a></li>
+          <li><a class="click about" href="#1">About</a></li>
+          <li><a class="click services" href="#2">Services and prices</a></li>
+          <li><a class="click barbers" href="#3">Barbers</a></li>
+          <li><a class="click contacts" href="#4">Contacts</a></li>
         </nav>
-        <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
+        <li>
+          <a class="phone click" href="tel:+380441111111">+38 044 111 11 11</a>
+        </li>
       </ul>
-      <button type="button">Online-booking</button>
+      <button class="booking click" type="button">Online-booking</button>
     </header>
     <main>
       <section>
-        <ul>
+        <ul class="header-sl">
           <li>
-            <a href="" target="_blank" rel="nooper noreferrer nofollow">
+            <a
+              class="instagram foc"
+              href=""
+              target="_blank"
+              rel="nooper noreferrer nofollow"
+            >
               Instagram</a
             >
           </li>
           <li>
-            <a href="" target="_blank" rel="nooper noreferrer nofollow"
+            <a
+              class="youtube foc"
+              href=""
+              target="_blank"
+              rel="nooper noreferrer nofollow"
               >Youtube</a
             >
           </li>
@@ -52,7 +70,7 @@
           <li><img src="./image/img 2-min.jpg" alt="head" width="270" /></li>
         </ul>
         <ul>
-          <p>About</p>
+          <p id="1">About</p>
           <h2>Best Barbershop in your city</h2>
           <p>
             If you want to add more confidence to your image, you should
@@ -70,7 +88,7 @@
       </section>
       <section>
         <p>Spend your time with the best masters</p>
-        <h2>Services and prices</h2>
+        <h2 id="2">Services and prices</h2>
         <ul>
           <li>
             <p>Men’s haircut</p>
@@ -136,7 +154,7 @@
       </section>
       <section>
         <p>For true enjoyers of the atmosphere</p>
-        <h2>Our barbers</h2>
+        <h2 id="3">Our barbers</h2>
         <ul>
           <li>
             <img src="./image/barber-1.jpg" alt="barber" width="370" />
@@ -159,23 +177,17 @@
         <p>In Latin, "barba" means "beard"</p>
         <ul>
           <li>
-            <img src="./image/Rectangle1.jpg" alt="pic1" width="270" />/=>
-          </li>
-          <li>
-            <img src="./image/Rectangle2.jpg" alt="pic2" width="270" />/=>
-          </li>
-          <li>
-            <img src="./image/Rectangle3.jpg" alt="pic3" width="270" />/=>
-          </li>
-          <li>
-            <img src="./image/Rectangle4.jpg" alt="pic4" width="270" />/=>
+            <img src="./image/Rectangle1.jpg" alt="pic1" width="270" />
+            <img src="./image/Rectangle2.jpg" alt="pic2" width="270" />
+            <img src="./image/Rectangle3.jpg" alt="pic3" width="270" />
+            <img src="./image/Rectangle4.jpg" alt="pic4" width="270" />
           </li>
         </ul>
       </section>
       <section>
         <h2>Online-booking</h2>
         <button type="button">send</button>
-        <h2>Contacts</h2>
+        <h2 id="4">Contacts</h2>
         <address>
           <ul>
             <li>
