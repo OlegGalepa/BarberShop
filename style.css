@@ -1,3 +1,4 @@
+
 body {
     /* background-color: #fff; */
     font-family: 'Open Sans';
@@ -11,59 +12,73 @@ body {
 }
 a, ul {
     list-style: none;
+    text-decoration:none;
+}
+.link, .list {
+    list-style-type: none;
     text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+.container {
+   margin-right: auto;
+   margin-left: auto;
+   padding-left: 15px; 
+   padding-right: 15px;
+   width: 1170px;
 }
 .header {
-  background-image: url("./image/slider/Slider-img-three.jpg"); /*, url("./image/slider/Slider-img-two.jpg"), url("./image/slider/Slider-img-three.jpg"); */
-position: absolute;
-    width: 1170px;
-    height: 680px;
-    left: 215px;
-    top: 0px;
+    background-color: aqua;
+}
+.head {
+    display: flex;
+ align-items: center;
+    
+}
+.nav {
+    display: flex;
+    gap: 40px;
 }
 .click {
-    position: absolute;
-    top: 7.65%;
-    bottom: 90%;
+    
     color: var(--header-text-color);
     font-weight: 600;
     font-size: 12px;
-    line-height: 16px;
+    line-height: calc(16/12);
     letter-spacing: 0.1em;
 }
+/* .nav .click +.click {
+    margin-left: 0;
+} */
 .click:hover,
 .click:focus {
     color:var(--focus-color);
 }
-.about {
-    left: 17.09%;
-    right: 79.49%;
-}
-.services {
-    left: 23.08%;
-    right: 65.64%;
-}
-.barbers {
-    left: 36.92%;
-    right: 58.55%;
-}
-.contacts {
-    left: 44.02%;
-    right: 50.85%;
+.ph {
+display: flex;
+align-items: center;
+/* margin-right: 254px; */
 }
 .phone {
-    left: 70.85%;
-    right: 18.8%;
+    display: flex;
+    align-items: center;
+/* margin-right: 254px; */
     text-transform: uppercase;
 }
 .booking {
-
+display: flex;
+margin-left: auto;
     text-transform: uppercase;
     letter-spacing: 0.09em;
-    left: 84.62%;
-    top: 5.88%;
-    bottom: 88.24%;
-    right: 1.71%;
     border-radius: 25px;
     box-sizing: border-box;
     border: 1px solid #FF6C00;
@@ -71,11 +86,7 @@ position: absolute;
 }
 /* ♣ */
 .instagram {
-    position: absolute;
-    left: 2.31%;
-    right: 91.54%;
-    top: 79.41%;
-    bottom: 18.38%;
+   
     font-weight: 600;
     font-size: 11px;
     line-height: 15px;
@@ -88,11 +99,7 @@ position: absolute;
     transform: rotate(-90deg);
 }
 .youtube {
-    position: absolute;
-    left: 2.31%;
-    right: 92.74%;
-    top: 62.94%;
-    bottom: 34.85%;
+   
     font-weight: 600;
     font-size: 11px;
     line-height: 15px;
@@ -108,3 +115,58 @@ position: absolute;
 .foc:focus {
     color:var(--focus-color);
 }
+
+.barbers {
+    animation: shakeX 2000ms infinite;
+}
+.contacts {
+    animation: fadeIn 2000ms infinite;
+}
+
+/* 
+@keyframes first-animation {
+    0% {
+        transform: translate(0, 0);
+        color: white;
+    }
+
+    25% {
+        transform: translate(50px, 0px);
+        color: red;
+    }
+
+    50% {
+        transform: translate(50px, 50px);
+        color: aqua;
+    }
+
+    75% {
+        transform: translate(0, 50px);
+        color: green;
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        color: white;
+    }
+}
+
+.current {
+    animation: first-animation 4000ms linear infinite;
+}
+
+.anim1 {
+    animation: fadeIn 2000ms infinite;
+}
+
+.anim2 {
+    animation: bounce 2000ms infinite;
+}
+
+.anim3 {
+    animation: shakeX 2000ms infinite;
+}
+
+.anim4 {
+    animation: jello 2000ms infinite;
+} */
